@@ -80,7 +80,7 @@ public class DepartmentListController implements Initializable {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			Pane pane = loader.load();
 			Stage dialogStage = new Stage();
-			dialogStage.setTitle("Enter department data: ");
+			dialogStage.setTitle("Enter department data");
 			dialogStage.setScene(new Scene(pane));
 			dialogStage.setResizable(false);
 			dialogStage.initOwner(parentStage);
