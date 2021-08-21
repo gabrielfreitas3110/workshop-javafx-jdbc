@@ -12,12 +12,12 @@ public class Constraints {
 	    });
 	}
 
-	public static void setTextFieldString(TextField txt) {
+	public static void setTextFieldName(TextField txt) {
 		txt.textProperty().addListener((obs, oldValue, newValue) -> {
-			 if (newValue != null && !newValue.matches("\\sa-zA-Z*")) {
-		            txt.setText(newValue.replaceAll("[^\\sa-zA-Z]", ""));
-		        }
-		    });
+			if (newValue != null && !newValue.matches("\\sa-zA-Z*\\ã\\á\\é")) {
+				txt.setText(newValue.replaceAll("[^\\sa-zA-Z\\ã\\á\\é]", ""));
+			}
+		});
 	}
 
 	public static void setTextFieldDouble(TextField txt) {

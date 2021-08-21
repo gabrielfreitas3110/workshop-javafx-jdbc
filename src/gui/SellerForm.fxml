@@ -53,6 +53,11 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </Label>
+            <Label text="Department" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
             <Label fx:id="labelErrorName" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="Arial" size="14.0" />
@@ -72,7 +77,7 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1">
+            <TextField fx:id="txtId" disable="true" editable="false" GridPane.columnIndex="1">
                <font>
                   <Font name="Arial" size="14.0" />
                </font></TextField>
@@ -91,6 +96,7 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </TextField>
+            <ComboBox fx:id="comboBoxDepartment" prefHeight="25.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
                   <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save">
@@ -105,12 +111,6 @@
                   </Button>
                </children>
             </HBox>
-            <Label text="Department" GridPane.rowIndex="5">
-               <font>
-                  <Font name="Arial" size="15.0" />
-               </font>
-            </Label>
-            <ComboBox fx:id="comboBoxDepartment" prefHeight="25.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </children>
