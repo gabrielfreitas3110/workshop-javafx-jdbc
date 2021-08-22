@@ -9,8 +9,8 @@ public class ValidationException extends RuntimeException {
 	
 	private Map<String, String> errors = new HashMap<>();
 	
-	public ValidationException(String msg) {
-		super(msg);
+	public ValidationException(String msgs) {
+		super(msgs);
 	}
 	
 	public Map<String, String> getErrors() {
